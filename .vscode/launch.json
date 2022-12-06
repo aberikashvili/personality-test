@@ -5,17 +5,37 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "type": "chrome",
       "request": "launch",
-      "name": "Debug Nest Framework",
-      "args": ["${workspaceFolder}/src/main.ts"],
-      "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
-      "sourceMaps": true,
-      "cwd": "${workspaceRoot}",
-      "protocol": "inspector",
-      "console": "externalTerminal",
-      "env": {
-        "NODE_ENV": "development"
+      "name": "Launch Chrome Debugger",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "command": "ng serve --project angular-ui",
+      "name": "Debug Angular UI",
+      "cwd": "${workspaceFolder}",
+      "request": "launch",
+      "type": "node-terminal",
+      "serverReadyAction": {
+        "action": "startDebugging",
+        "name": "Launch Chrome Debugger",
+        "pattern": "listening on localhost:4200"
+      }
+    },
+    {
+      "command": "ng serve --project nestjs-server",
+      "name": "Debug Nestjs Server",
+      "cwd": "${workspaceFolder}",
+      "request": "launch",
+      "type": "node-terminal",
+      "serverReadyAction": {
+        "action": "startDebugging",
+        "name": "Launch Chrome Debugger",
+        "pattern": "listening on localhost:3333"
       }
     }
   ]
