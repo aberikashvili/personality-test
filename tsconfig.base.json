@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@personality-test/component-lib": ["libs/component-lib/src/index.ts"]
+      "@personality-test/component-lib": ["libs/component-lib/src/index.ts"],
+      "@personality-test/shared": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

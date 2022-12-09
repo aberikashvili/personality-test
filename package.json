@@ -6,8 +6,9 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
+    "start:admin": "nx serve angular-admin",
     "start:nestjs-server": "nx serve nestjs-server",
-    "start:full-stack": "nx run-many --target=serve --projects=angular-ui,nestjs-server --parallel=2",
+    "start:full-stack": "nx run-many --target=serve --projects=angular-ui,angular-admin,nestjs-server --parallel=3",
     "build": "nx build",
     "test": "nx test"
   },
@@ -24,6 +25,7 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^6.1.3",
     "@nrwl/angular": "14.8.6",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
