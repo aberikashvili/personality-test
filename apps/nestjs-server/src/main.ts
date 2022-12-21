@@ -19,7 +19,7 @@ async function bootstrap() {
     .setTitle('PersonaliTy Test')
     .setDescription('The personality test API description')
     .setVersion('1.0')
-    .addTag('personality-test')
+    // .addTag('Api')
     .build();
   const swagerDocument = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('swagger-ui', app, swagerDocument);

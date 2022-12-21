@@ -8,7 +8,7 @@
     "start": "nx serve",
     "start:admin": "nx serve angular-admin",
     "start:nestjs-server": "nx serve nestjs-server",
-    "start:full-stack": "nx run-many --target=serve --projects=angular-ui,angular-admin,nestjs-server --parallel=3",
+    "start:full-app": "nx run-many --target=serve --projects=angular-ui,angular-admin,nestjs-server --parallel=3",
     "build": "nx build",
     "test": "nx test"
   },
