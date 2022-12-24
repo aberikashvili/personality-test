@@ -22,18 +22,18 @@ These capabilities include generating applications, libraries, etc as well as th
 
 Below are our core plugins:
 
--   [Angular](https://angular.io)
-    -   `ng add @nrwl/angular`
--   [React](https://reactjs.org)
-    -   `ng add @nrwl/react`
--   Web (no framework frontends)
-    -   `ng add @nrwl/web`
--   [Nest](https://nestjs.com)
-    -   `ng add @nrwl/nest`
--   [Express](https://expressjs.com)
-    -   `ng add @nrwl/express`
--   [Node](https://nodejs.org)
-    -   `ng add @nrwl/node`
+- [Angular](https://angular.io)
+  - `ng add @nrwl/angular`
+- [React](https://reactjs.org)
+  - `ng add @nrwl/react`
+- Web (no framework frontends)
+  - `ng add @nrwl/web`
+- [Nest](https://nestjs.com)
+  - `ng add @nrwl/nest`
+- [Express](https://expressjs.com)
+  - `ng add @nrwl/express`
+- [Node](https://nodejs.org)
+  - `ng add @nrwl/node`
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 
@@ -60,6 +60,24 @@ Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The 
 ## Code scaffolding
 
 Run `ng g component my-component --project=my-app` to generate a new component.
+
+### Adding new NestJs modules
+
+Run `npx nx g @nrwl/nest:module -p <project name> --name <module name> --directory app/modules/<module folder name> --flat`
+
+Example `npx nx g @nrwl/nest:module -p nestjs-server --name admin --directory app/modules/admin --flat`
+
+### Adding new NestJs controllers
+
+Run `npx nx g @nrwl/nest:service -p <project name> --name <component name> --directory app/modules/<module folder name>/controllers --flat`
+
+Example `npx nx g @nrwl/nest:controller -p nestjs-server --name admin --directory app/modules/admin/controllers --flat`
+
+### Adding new NestJs services
+
+Run `npx nx g @nrwl/nest:service -p <project name> --name <service name> --directory app/modules/<module folder name>/services --flat`
+
+Example `npx nx g @nrwl/nest:service -p nestjs-server --name admin --directory app/modules/admin/services --flat`
 
 ## Build
 
