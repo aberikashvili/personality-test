@@ -1,0 +1,14 @@
+.TestPage {
+  &__Space {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  &__Content {
+    line-height: 60px;
+    text-align: center;
+    margin-top: 16;
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "id": 1,
+      "title": "Personality Test: Are you introvert or Extrovert?",
+      "caption": "You can take this test to check, are you introvert or extrovert",
+      "coverImageUri": "https://keydifferences.com/wp-content/uploads/2016/07/introvert-vs-extrovert-thumbnail.jpg",
+      "questions": [
+        {
+          "id": 1,
+          "question": "This is first question",
+          "answers": [
+            { "id": 1, "type": "introvert", "answer": "Yes" },
+            { "id": 2, "type": "extrovert", "answer": "No" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Are you SportCar person or SUV person?",
+      "caption": "Take this test to find out, are you Sport Car person or SUV person?",
+      "coverImageUri": "https://www.car-brand-names.com/wp-content/uploads/2016/04/Cars-vs-Trucks.jpg",
+      "questions": [
+        {
+          "id": 2,
+          "question": "Which one would to take for a ride?",
+          "answers": [
+            { "id": 1, "type": "sportcar", "answer": "Lamborghini Aventador" },
+            { "id": 2, "type": "suv", "answer": "Ford F-150 Raptor" }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which one would to take for a ride?",
+          "answers": [
+            { "id": 3, "type": "sportcar", "answer": "Ferrari Enzo" },
+            { "id": 4, "type": "suv", "answer": "Dodge RAM TRX" }
+          ]
+        }
+      ]
+    }
+  ]
+}

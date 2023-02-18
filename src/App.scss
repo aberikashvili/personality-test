@@ -1,0 +1,33 @@
+.App {
+  &__Header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__Logo {
+    float: left;
+    width: 150px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    line-height: 31px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__Layout {
+    padding: 0 50px;
+
+    &-Content {
+      padding: 24px;
+      min-height: 380px;
+    }
+  }
+
+  &__Footer {
+    text-align: center;
+  }
+}
